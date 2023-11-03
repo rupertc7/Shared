@@ -1,0 +1,39 @@
+WARNING:root:SHAPE NOT RECOGNISED. Please check your spelling and try again.
+WARNING:root:shape not recognisedtt
+WARNING:root:shape not recognised, text entered :- hexigggon
+WARNING:root:shape not recognised, text entered :- triangles
+INFO:root:Program started
+INFO:root:Prompts the user to input the name of the shape for which the perimeter is to be calculated.
+INFO:root:Declares a dictionary of shapes and their corresponding number of sides.
+INFO:root:Set the number of sides based on the shape name and checks for spelling errors.
+INFO:root:Input measurement units.
+INFO:root:As squares are regular, the program sets the number of sides to 4 and asks for the length of one side.
+INFO:root:If regular, the program asks for the length of one side and sets the length of all sides to be the same.
+INFO:root:If not regular, the program asks for the length of each side.
+INFO:root:If not regular, the program asks for the length of each side.
+INFO:root:Sum the lengths of all sides.
+INFO:root:Format the perimeter as a number with commas and as words using the num2words library.
+INFO:root:Prints the perimeter of the shape in words and in numbers.
+INFO:root:Program ended
+INFO:root:Program started
+INFO:root:Prompts the user to input the name of the shape for which the perimeter is to be calculated.
+INFO:root:Declares a dictionary of shapes and their corresponding number of sides.
+INFO:root:Set the number of sides based on the shape name and checks for spelling errors.
+INFO:root:Input measurement units.
+INFO:root:As squares are regular, the program sets the number of sides to 4 and asks for the length of one side.
+INFO:root:If regular, the program asks for the length of one side and sets the length of all sides to be the same.
+INFO:root:If not regular, the program asks for the length of each side.
+INFO:root:If not regular, the program asks for the length of each side.
+INFO:root:If regular, the program asks for the length of one side and sets the length of all sides to be the same.
+INFO:root:Sum the lengths of all sides.
+INFO:root:Program started
+INFO:root:Prompts the user to input the name of the shape for which the perimeter is to be calculated.
+INFO:root:Declares a dictionary of shapes and their corresponding number of sides.
+INFO:root:Set the number of sides based on the shape name and checks for spelling errors.
+INFO:root:Input measurement units.
+INFO:root:As squares are regular, the program sets the number of sides to 4 and asks for the length of one side.
+INFO:root:If regular, the program asks for the length of one side and sets the length of all sides to be the same.
+INFO:root:If not regular, the program asks for the length of each side.
+INFO:root:Program ended
+WARNING:root:Shape not recognized, text entered: test
+WARNING:root:shape not recognised, text entered :- 6
