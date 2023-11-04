@@ -1,3 +1,11 @@
+# Purpose:  timer
+# How:      range with sleep fn
+# Status:   WORKS
+# Elements: For, Range, time.sleep
+# Imports:  time
+# Author:   unknown
+# Date:     unknown
+
 import time 
 my_time = int(input("Time in seconds: "))
 
