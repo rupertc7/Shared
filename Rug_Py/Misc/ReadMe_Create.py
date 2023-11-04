@@ -30,10 +30,12 @@ def process_directory(directory):
     # Initialize the table data
     table_data = ""
 
+
     # Loop through the .py files in the directory and extract data from their headers
     for py_file in py_files:
-        with open(os.path.join(directory, py_file), 'r') as file:
+        with open(os.path.join(directory, py_file), 'r', encoding='utf-8') as file:  #               By specifying encoding='utf-8', you're telling Python to treat the file as UTF-8 encoded text.
             file_lines = file.readlines()
+    
 
         header_data = {key: '' for key in header_markers.keys()}
 
