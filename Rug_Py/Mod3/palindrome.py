@@ -1,3 +1,13 @@
+# Purpose:     palindrome check 2 solutions
+# How:         word reversal, and char compare
+# Status:      it works
+# Elements:    for, if
+# Imports:      
+# Author:       ROC
+# Date:         2/11/2023 
+# Note:   
+#______________________________________________________________________
+
 # ROC 2/11/2023  write a program that checks if a word is a palindrome
 
 # Solution 1 - reversal of the word

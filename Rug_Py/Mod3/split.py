@@ -1,6 +1,16 @@
+# Purpose:     to learn using split
+# How:         trial and error
+# Status:      it works   
+# Elements:    split
+# Imports:      
+# Author:      ROC
+# Date:        2/11/2023
+# Note:   
+#______________________________________________________________________
+
 # ROC 2/11/2023 homework week 3
 # Write a program to split a given string on hyphens and display each substring
-# Str1 = “Emma-is-a-data-scientist”
+# Str1 = 'Emma-is-a-data-scientist'
 # Output must have each sub-string on a new line
 
 str1 = 'Emma-is-a-data-scientist'

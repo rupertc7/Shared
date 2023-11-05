@@ -1,3 +1,13 @@
+# Purpose:     remove blank space in text: 2 solutions
+# How:         split on space, and pattern matching
+# Status:      in prog
+# Elements:   split, for,  &  re
+# Imports:     re
+# Author:       ROC
+# Date:       2/11/23    
+# Note:       was fully working when it was lost. 
+#______________________________________________________________________
+
 # ROC 2/11/2023  Homework week 3
 # Remove extra spaces between words:
 # Given the following sentence, find a way to remove all the extra spaces and print the same sentence with just one space between words.
