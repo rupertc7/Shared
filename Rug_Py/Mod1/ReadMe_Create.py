@@ -1,11 +1,12 @@
 # Purpose:     Creates readme with file script details
 # How:         It reads this header for each script in a folder
-# Status:      it works
+# Status:      it works *cNote
 # Elements:    extract data, splits it, goes through subdirectorys and over writes old files
 # Imports:     os
 # Author:      ROC
 # Date:        4/11/2023   
 # Note:        psudocoded and interativly refined
+# cNote:       The script falls over when it hits UnicodeDecodeError. This is encouted where there are characters like " but in a curly style" often seen as a ? on a white background.
 #______________________________________________________________________
 
 
@@ -20,6 +21,25 @@ header_markers = {
 }
 
 # Function to process a directory and generate a ReadMe file
+# def process_directory(directory):
+#     # Get a list of all .py files in the directory
+#     py_files = [file for file in os.listdir(directory) if file.endswith('.py')]
+
+#     # Initialize the table header
+#     table_header = "Filename\tFunction\tStatus\tHow\tElements\n"
+
+#     # Initialize the table data
+#     table_data = ""
+
+
+#     # Loop through the .py files in the directory and extract data from their headers
+#     for py_file in py_files:
+#         with open(os.path.join(directory, py_file), 'r', encoding='utf-8') as file:  #               By specifying encoding='utf-8', you're telling Python to treat the file as UTF-8 encoded text.
+#             file_lines = file.readlines()
+    
+
+#         header_data = {key: '' for key in header_markers.keys()}
+# Function to process a directory and generate a ReadMe file
 def process_directory(directory):
     # Get a list of all .py files in the directory
     py_files = [file for file in os.listdir(directory) if file.endswith('.py')]
@@ -30,14 +50,19 @@ def process_directory(directory):
     # Initialize the table data
     table_data = ""
 
-
     # Loop through the .py files in the directory and extract data from their headers
     for py_file in py_files:
-        with open(os.path.join(directory, py_file), 'r', encoding='utf-8') as file:  #               By specifying encoding='utf-8', you're telling Python to treat the file as UTF-8 encoded text.
-            file_lines = file.readlines()
-    
+        with open(os.path.join(directory, py_file), 'r', encoding='utf-8') as file:
+            try:
+                file_lines = file.readlines()
+            except UnicodeDecodeError as e:
+                print(f"Error reading file '{py_file}': {e}")
+                continue  # Skip to the next file
 
         header_data = {key: '' for key in header_markers.keys()}
+
+        # Rest of the processing code...
+
 
         # Extract header data
         for line in file_lines:
