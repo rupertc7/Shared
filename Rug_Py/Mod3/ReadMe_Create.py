@@ -1,15 +1,12 @@
 # Purpose:     Creates readme with file script details
 # How:         It reads this header for each script in a folder
-# Status:      it works *cNote
+# Status:      it works
 # Elements:    extract data, splits it, goes through subdirectorys and over writes old files
 # Imports:     os
 # Author:      ROC
 # Date:        4/11/2023   
 # Note:        psudocoded and interativly refined
-# cNote:       The script falls over when it hits UnicodeDecodeError. This is encouted where there are characters like " but in a curly style" often seen as a ? on a white background.
 #______________________________________________________________________
-
-
 import os
 
 # Define the header markers
@@ -20,25 +17,6 @@ header_markers = {
     "Elements": "# Elements:"
 }
 
-# Function to process a directory and generate a ReadMe file
-# def process_directory(directory):
-#     # Get a list of all .py files in the directory
-#     py_files = [file for file in os.listdir(directory) if file.endswith('.py')]
-
-#     # Initialize the table header
-#     table_header = "Filename\tFunction\tStatus\tHow\tElements\n"
-
-#     # Initialize the table data
-#     table_data = ""
-
-
-#     # Loop through the .py files in the directory and extract data from their headers
-#     for py_file in py_files:
-#         with open(os.path.join(directory, py_file), 'r', encoding='utf-8') as file:  #               By specifying encoding='utf-8', you're telling Python to treat the file as UTF-8 encoded text.
-#             file_lines = file.readlines()
-    
-
-#         header_data = {key: '' for key in header_markers.keys()}
 # Function to process a directory and generate a ReadMe file
 def process_directory(directory):
     # Get a list of all .py files in the directory
@@ -53,16 +31,9 @@ def process_directory(directory):
     # Loop through the .py files in the directory and extract data from their headers
     for py_file in py_files:
         with open(os.path.join(directory, py_file), 'r', encoding='utf-8') as file:
-            try:
-                file_lines = file.readlines()
-            except UnicodeDecodeError as e:
-                print(f"Error reading file '{py_file}': {e}")
-                continue  # Skip to the next file
+            file_lines = file.readlines()
 
         header_data = {key: '' for key in header_markers.keys()}
-
-        # Rest of the processing code...
-
 
         # Extract header data
         for line in file_lines:
@@ -72,8 +43,9 @@ def process_directory(directory):
 
         # Format the output
         formatted_data = f"{os.path.splitext(py_file)[0]}\tFunction:\t{header_data['Purpose']}\n"
-        formatted_data += f"    STATUS: {header_data['Status']} {header_data['How']}\n"
-        formatted_data += f"    HOW: {header_data['How']}\n"
+        formatted_data += f"    STATUS: {header_data['Status']}\n"
+        if header_data['How']:
+            formatted_data += f"    HOW: {header_data['How']}\n"
         formatted_data += f"    ELEMENTS: {header_data['Elements']}\n"
 
         # Append formatted data to the table
@@ -93,4 +65,3 @@ for root, _, _ in os.walk(root_directory):
         process_directory(root)
 
 print("ReadMe files generated or updated.")
-    

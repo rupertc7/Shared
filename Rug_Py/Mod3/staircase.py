@@ -1,14 +1,14 @@
 # Purpose:     build a staircase with numbers
-# How:         
-# Status:      reWrite    
-# Elements:   
+# How:         input steps, loops
+# Status:      it works    
+# Elements:    for, range
 # Imports:      
-# Author:       ROC
+# Author:      ROC
 # Date:        3/11/2023
-# Note:       lost
+# Note:        lost
 #______________________________________________________________________
 
-# ROC 3/11/2023 MOD 3 Homework
+# MOD 3 Homework
 # Print a staircase:
 # Write a script that given an integer, print a staircase made of number as shown below:
 # Given the number 7:
@@ -20,3 +20,9 @@
 666666
 7777777
 # Hint: can you nest for loops?
+
+print('\tThis program will print a staircase of numbers')
+steps = input('\tPlease input the number of steps:- ')
+
+for i in range(1, int(steps) + 1):
+    print(str(i) * (i))     # cNOTE this is a test - ignore.
