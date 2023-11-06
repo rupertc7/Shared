@@ -18,8 +18,5 @@ newscript.py        creats a new python script with a header used to create the 
                     # Date:        "today's date" default
                     # Note:        e.g. codewhisperer or psudocoded etc.
 
-header_insert.py    Inserts headers compatable with the ReadMe_Create.py script to all 
-                    scripts in a folder. This is useful where you want to use auto gen
-                    Readme.txt on leggacy folder.   The particulars still need to be 
-                    added manually. 
+header_insert.py    Has been removed
 
