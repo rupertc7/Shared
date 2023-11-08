@@ -4,7 +4,11 @@ contains_name	Function:	finds and counts words in para
     ELEMENTS: input, count, upper
 count_char	Function:	counts char, int, and symbols, 2 solutions
     STATUS: it works
+    HOW: For loop and for if on a single line
     ELEMENTS: isdigit, isalph, not isalnum
+nested_loop	Function:	understand nested loops and continue
+    STATUS: in testing
+    ELEMENTS: join, len, range, append, continue
 newscript	Function:	Header filling, script creator
     STATUS: it works
     HOW: Input request, skips regular inputs
@@ -13,6 +17,9 @@ palindrome	Function:	palindrome check 2 solutions
     STATUS: it works
     HOW: word reversal, and char compare
     ELEMENTS: for, if
+pop_header	Function:	copies cNOTEs, fn, and imports to header
+    STATUS: in progress
+    ELEMENTS: 
 ReadMe_Create	Function:	Creates readme with file script details
     STATUS: it works
     HOW: It reads this header for each script in a folder
@@ -29,3 +36,7 @@ staircase	Function:	build a staircase with numbers
     STATUS: it works
     HOW: input steps, loops
     ELEMENTS: for, range
+time_fn	Function:	learn about time
+    STATUS: works
+    HOW: borrowed code
+    ELEMENTS: time, range, for
