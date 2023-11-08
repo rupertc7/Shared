@@ -1,11 +1,11 @@
 # Purpose:  understand nested loops and continue
 # How: 
-# Status:   in testing
-# Elements: join, len, range, append, continue
+# Status:   it works
+# Elements: join, len, range, append, continue, output [ ]
 # Imports: 
 # Author:   ROC
 # Date:     2023-11-07
-# Note: 
+# Note:     from io import SringIO & import sys I could caputure the print output to a variable. 
 #______________________________________________________________________
 
 colours= ["red", "green", "blue"]

@@ -7,8 +7,8 @@ count_char	Function:	counts char, int, and symbols, 2 solutions
     HOW: For loop and for if on a single line
     ELEMENTS: isdigit, isalph, not isalnum
 nested_loop	Function:	understand nested loops and continue
-    STATUS: in testing
-    ELEMENTS: join, len, range, append, continue
+    STATUS: it works
+    ELEMENTS: join, len, range, append, continue, output [ ]
 newscript	Function:	Header filling, script creator
     STATUS: it works
     HOW: Input request, skips regular inputs
