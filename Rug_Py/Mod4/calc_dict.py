@@ -23,7 +23,7 @@ from num2words import num2words
 dict3 = {index: num2words(index) for index in dict2}
 print('dict3 = ' + str(dict3) + ' NOT intended output')
 
-# Got this wrong, it changes the value not the index. I don't understand why?
+# fixed error
 dict4 = {num2words(index): value for index, value in dict2.items()}
 print('dict4 = ' + str(dict4))
 
