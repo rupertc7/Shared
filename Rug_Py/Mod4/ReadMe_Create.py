@@ -46,7 +46,7 @@ def process_directory(directory):
         formatted_data += f"    STATUS: {header_data['Status']}\n"
         if header_data['How']:
             formatted_data += f"    HOW: {header_data['How']}\n"
-        formatted_data += f"    ELEMENTS: {header_data['Elements']}\n"
+        formatted_data += f"    ELEMENTS: {header_data['Elements']}\n\n"
 
         # Append formatted data to the table
         table_data += formatted_data

@@ -1,4 +1,4 @@
-# Purpose: notes taking in lesson
+# Purpose: NOTE TAKING
 # How: 
 # Status:  screen shots to transcribe
 # Elements: 
@@ -68,6 +68,16 @@
 # my_dict = {}
 # print(dict([('eggs',2), ('bacon', 1), ('milk', 4)]))
 
+sups ={'Batman':[1, 2, 3, 4, 5, 6],
+       'Superman': {'a': ['hello', 'bye'], 'b': 2, 'c': 3, 'e': 4},
+       'Spiderman': 'Peter Parker'}
+
+print(sups['Superman']['a'][0])
+print(sups['Superman']['a'][1])
+print(sups['Superman']['a'][1])
+
+# print(sups.get('ironman'])) # returns a "none" rather than giving an error. 
+
 # sups = {'batman': 'bruce wayne', 'superman': 'clark kent', 'spiderman': 'peter parker' }
 
 # print(sups.keys())
@@ -97,9 +107,21 @@
 
 # # sups = {'batman': ['a','b','c','e'], 'superman': 'clark kent', 'spiderman': 'peter parker' }
 
+
 # t =  12345, 543231, 'hello'
 # t = ()
 # print(t[0])
 
-my_set = {1,1,2,3,4,5,}
-print(my_set)
+# my_set = {1,1,2,3,4,5,6}
+# # print(my_set)
+
+# person = {'name':'Sam', 'age': 42}
+# name, age = person['name'], person['age']
+
+# # I can write this
+# person = ('Sam', 42)
+# name, age = person
+
+# # Sytactic Sugar
+# new_list = [num for num in my_set if num != 5]
+# print(new_list)

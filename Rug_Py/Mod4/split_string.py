@@ -1,6 +1,6 @@
 # Purpose: splits a sting into a list
-# How: 
-# Status: not written
+# How:    For loop to split, join to reconnect.
+# Status: it works
 # Elements: 
 # Imports: 
 # Author: ROC
