@@ -1,6 +1,6 @@
 # Purpose: calcs the sum of all items in a dictionary
 # How:     Syntactic Sugar experiments
-# Status:  it works, don't understand Dict3
+# Status:  it works
 # Elements: for, index, range, enumerate, Walrus operator
 # Imports: num2words
 # Author: ROC
@@ -19,9 +19,12 @@ print('dict2 = ' + str(dict2))
 # import external module
 from num2words import num2words
 
-# Got this wrong, it changes the value not the index. I don't understand why?
-dict3 = {index: num2words(index) for index in dict2}
-print('dict3 = ' + str(dict3) + ' NOT intended output')
+# Got this wrong, it changes the value not the index. 
+dict3v1 = {index: num2words(index) for index in dict2}
+print('dict3v1 = ' + str(dict3v1) + ' NOT intended output')
+dict3v2 = {num2words(index): index for index in dict2}  #the first thing you write in a comprehension is an expression. Everything else will follow the expression's syntax
+print('dict3v2 = ' + str(dict3v2) + ' intended output')
+
 
 # fixed error
 dict4 = {num2words(index): value for index, value in dict2.items()}

@@ -1,5 +1,5 @@
 calc_dict	Function:	calcs the sum of all items in a dictionary
-    STATUS: it works, don't understand Dict3
+    STATUS: it works
     HOW: Syntactic Sugar experiments
     ELEMENTS: for, index, range, enumerate, Walrus operator
 
