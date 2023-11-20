@@ -37,6 +37,7 @@ from num2words import num2words
 # print('dict3v2 = ' + str(dict3v2) + ' intended output')
 
 def dict_3():
+    dict2 = dict_2()
     dict3v1 = {index: num2words(index) for index in dict2}
     print('dict3v1 = ' + str(dict3v1) + ' NOT intended output')
     dict3v2 = {num2words(index): index for index in dict2}  #the first thing you write in a comprehension is an expression. Everything else will follow the expression's syntax
@@ -44,8 +45,8 @@ def dict_3():
 
 
 # fixed error
-dict4 = {num2words(index): value for index, value in dict2.items()}
-print('dict4 = ' + str(dict4))
+# dict4 = {num2words(index): value for index, value in dict2.items()}
+# print('dict4 = ' + str(dict4))
 
 # def dict_4():
 #     dict4 = {num2words(index): value for index, value in dict2.items()}
@@ -62,6 +63,7 @@ def dict_4(dict2):
 # print('dict5 = ' + str(dict5))
 
 def dict_5():
+    dict2 = dict_2()
     dict5 = {num2words(k): v for k, v in dict2.items()}
     print('dict5 = ' + str(dict5))
 
@@ -91,7 +93,7 @@ def total_a():
 # [total := total + v for v in dict4.values()]
 # print('Using walrus operator the Sum of dict4 = ' + str(total))
 
-def total_b():
+def total_b(dict4):
     total = 0
     [total := total + v for v in dict4.values()]
     print('Using walrus operator the Sum of dict4 = ' + str(total))
