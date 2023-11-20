@@ -1,11 +1,11 @@
 # Purpose:     guess randomly generated numbers
 # How:         input steps, loops
-# Status:  RE-WRITE
+# Status:      it works
 # Elements:    for, range
 # Imports:      
 # Author:      ROC
-# Date:        3/11/2023
-# Note:        lost
+# Date:        20/11/2023
+# Note:        added  user input validation
 #______________________________________________________________________
 # ROC 27/10/2023  Homework 2/2
 # While loop:

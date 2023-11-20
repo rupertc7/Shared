@@ -1,11 +1,11 @@
 # Purpose:     palindrome check 2 solutions
 # How:         word reversal, and char compare
-# Status:      RE-WRITE
+# Status:      it works
 # Elements:    for, if
 # Imports:      
 # Author:       ROC
 # Date:         20/11/2023 
-# Note:   
+# Note:         re written with functions and input validation
 #______________________________________________________________________
 
 # ==============================

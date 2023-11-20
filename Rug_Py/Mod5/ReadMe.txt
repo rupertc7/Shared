@@ -33,7 +33,7 @@ guess_num2_fn	Function:	guess randomly generated numbers
     ELEMENTS: for, range
 
 guess_num_fn	Function:	guess randomly generated numbers
-    STATUS: RE-WRITE
+    STATUS: it works
     HOW: input steps, loops
     ELEMENTS: for, range
 
@@ -48,7 +48,7 @@ notes	Function:	mod5 lesson notes
     ELEMENTS: 
 
 palindrome_fn	Function:	palindrome check 2 solutions
-    STATUS: RE-WRITE
+    STATUS: it works
     HOW: word reversal, and char compare
     ELEMENTS: for, if
 
