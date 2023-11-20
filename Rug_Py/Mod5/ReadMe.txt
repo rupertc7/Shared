@@ -8,26 +8,31 @@ calc_dict_fn	Function:	calcs the sum of all items in a dictionary
     HOW: Syntactic Sugar experiments
     ELEMENTS: for, index, range, enumerate, Walrus operator
 
-contains_name	Function:	finds and counts words in para
-    STATUS: RE-WRITE
+contains_name_fn	Function:	finds and counts words in para
+    STATUS: it works
     HOW: count fn on inputs
     ELEMENTS: input, count, upper
 
-count_char	Function:	counts char, int, and symbols, 2 solutions
-    STATUS: RE-WRITE
+count_char_fn	Function:	counts char, int, and symbols, 2 solutions
+    STATUS: it works
     ELEMENTS: isdigit, isalph, not isalnum
 
-de_duplicate	Function:	remove duplicates from a list
-    STATUS: RE-WRITE
+de_duplicate_fn	Function:	remove duplicates from a list
+    STATUS: it works
     HOW: using set, lots of playing around
     ELEMENTS: 
 
-fizz_buzz_2	Function:	fizz buzz game
-    STATUS: RE-WRITE
+fizz_buzz_fn	Function:	fizz buzz game
+    STATUS: it works
     HOW: input steps, loops
     ELEMENTS: for, range
 
-guess_num	Function:	guess randomly generated numbers
+guess_num2_fn	Function:	guess randomly generated numbers
+    STATUS: it works - but misses error capture
+    HOW: input steps, loops
+    ELEMENTS: for, range
+
+guess_num_fn	Function:	guess randomly generated numbers
     STATUS: RE-WRITE
     HOW: input steps, loops
     ELEMENTS: for, range
@@ -42,7 +47,7 @@ notes	Function:	mod5 lesson notes
     HOW: practice in class
     ELEMENTS: 
 
-palindrome	Function:	palindrome check 2 solutions
+palindrome_fn	Function:	palindrome check 2 solutions
     STATUS: RE-WRITE
     HOW: word reversal, and char compare
     ELEMENTS: for, if

@@ -8,6 +8,9 @@
 # Note: 
 # ______________________________________________________________________
 
+# import external module
+from num2words import num2words
+
 # use enumerate when you need both the index and the value, and use a simple loop or comprehension when you only need the index or the value.
 def dict_1():
     dict1 = {x: x + y for x, y in enumerate(range(10))}
@@ -16,9 +19,6 @@ def dict_1():
 # not need to enumerate this as the index is iterated one at a time
 def dict_2():
     return {index: 5 * index for index in range(10)}
-
-# import external module
-from num2words import num2words
 
 def dict_3():
     dict2 = dict_2()
