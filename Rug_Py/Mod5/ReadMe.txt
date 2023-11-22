@@ -27,6 +27,10 @@ fizz_buzz_fn	Function:	fizz buzz game
     HOW: input steps, loops
     ELEMENTS: for, range
 
+fn_diff_args	Function:	demo of no parameter, multi parameter, *args, *kwargs, fn in fn, recursion
+    STATUS: in prog
+    ELEMENTS: 
+
 guess_num2_fn	Function:	guess randomly generated numbers
     STATUS: it works - but misses error capture
     HOW: input steps, loops

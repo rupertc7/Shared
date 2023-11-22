@@ -43,3 +43,50 @@ else:
         print("The number " + query + " is included in the list in position " + str(index))
     except ValueError:
         print("The number " + query + " is not in the list.")
+        
+# ==============================  ##    ###     ###   ####	  ####   #####	######
+# Module Imports				  ##	## ## ## ##   #####	 ##  ##  ###	  ##
+# ==============================  ##	##  ###  ##   ##	  #### 	 ##	##	  ##
+from operator import index
+import random
+
+# ==============================    ####   ####   ###   ##
+# Constants                       ##      ##  ##  ## ## ##
+# ==============================    ####   ####   ##   ###
+
+
+# ==============================  #######  ###   ##
+# Function Definitions            #####    ## ## ##
+# ==============================  ##       ##   ###
+
+def list_1():
+    return sorted(random.sample(range(10, 100), 50))
+
+def input_num():                                                        # take and validate input from user
+    while True:
+        try:
+            input_num = input('Enter input: ')
+            if input_num.isnumeric() and input_num in range[10,100]:    # double check on validity
+                return input_num                                        # Return the input directly
+            else:
+                print('Invalid input. Please try again.')
+
+        except Exception as e:
+            print(f'Error: {e}. Please try again.')
+            
+def quit():
+    if query.lower() == 'x':
+        print('\t\tYou have exited the function')
+        exit()
+        
+
+
+# ==============================  ###     ###     ##     ##  ###   ##
+# Main function                   ## ## ## ##   ##  ##   ##  ## ## ##
+# ==============================  ##  ###  ##  ##    ##  ##  ##   ###
+def main():
+    lst = list_1()
+    query = input_num()
+
+if __name__ == '__main__':
+    main()
