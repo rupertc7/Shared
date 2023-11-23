@@ -17,7 +17,7 @@ def data_in(prompt, valid_values=None):                                      # t
         try:
             user_input = input(prompt)
             if user_input.isnumeric() and (valid_values is None or int(user_input) in valid_values):
-                return int(user_input)                    # Return the input directly as integer
+                return int(user_input)                                      # cast string to integer
             else:
                 print('Invalid input. Please try again.')
 

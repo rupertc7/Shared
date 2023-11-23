@@ -1,3 +1,8 @@
+BMI_Calc	Function:	Calculates the BMI of a person
+    STATUS: it works
+    HOW: basic math
+    ELEMENTS: f string,  validation of input
+
 calc_dict	Function:	calcs the sum of all items in a dictionary
     STATUS: FAIL cannot find the error yet.
     HOW: Syntactic Sugar experiments
