@@ -99,3 +99,7 @@ student_grading	Function:	grade a student according to the score obtained
     HOW: input steps, loops
     ELEMENTS: TRY, IF ELSE
 
+tip_calc_ReF	Function:	calcs the tip amount per person at a meal
+    STATUS: it Works
+    ELEMENTS: 
+

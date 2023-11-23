@@ -65,8 +65,11 @@ def default_vals(*args, power=2):                                           # de
     print(result)
     
 def call_fn_in_fn():                                                        # Function that invokes another function​
-    result = default_vals(*my_args, power=how_many_args(my_args))
-    print(result)
+    result = default_vals(*my_args, power=0.5)                              # count_elements(lst)
+    if result is not None:
+        print(result)
+    return result
+
     
 # ==============================  ###     ###     ##     ##  ###   ##
 # Main function                   ## ## ## ##   ##  ##   ##  ## ## ##
