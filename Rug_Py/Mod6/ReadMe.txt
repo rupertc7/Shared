@@ -1,17 +1,10 @@
-1	Function:	
-    STATUS: not started
+fizzbuzz_called_asModule	Function:	calling a class
+    STATUS: it works
     ELEMENTS: 
 
-2	Function:	
-    STATUS: not started
-    ELEMENTS: 
-
-3	Function:	
-    STATUS: not started
-    ELEMENTS: 
-
-4	Function:	
-    STATUS: not started
+Fizzbuzz_class_ReFactored	Function:	Fizzbuzz game
+    STATUS: it works
+    HOW: written as a class
     ELEMENTS: 
 
 lambda_function	Function:	
@@ -23,7 +16,7 @@ newscript	Function:	Header filling, script creator
     HOW: Input request, skips regular inputs
     ELEMENTS: if, scritpwrite, date
 
-notes	Function:	
+notes_on_classes	Function:	
     STATUS: 
     ELEMENTS: 
 
